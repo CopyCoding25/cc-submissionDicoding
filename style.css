@@ -114,14 +114,11 @@ input {
 /* main artikel */
 main {
     width: 100%;
-    background-color: white;
-    position: absolute;
-    z-index: 1;
 }
 
 /* content */
 #content {
-    width: 75%;
+    width: 70%;
     float: left;
 }
 
@@ -131,20 +128,30 @@ main {
     width: 100%;
 }
 
-.judul-artikel {
-    margin-right: 160px;
+.judul-artikel,
+.judul-skill,
+#contact h4 {
     font-size: 28px;
-    text-align: center;
-    padding: 40px;
+    padding: 40px 0 0 40px;
 }
 
-.konten-artikel {
+.judul-artikel h3,
+.judul-skill h3,
+.biodata h4,
+#contact h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.konten-artikel,
+.konten-skill {
     padding: 20px;
 }
 
 .konten-artikel p {
     text-indent: 40px;
-    margin-bottom: 15px;
+    margin: 0 20px 15px 0;
+    text-align: justify;
 }
 
 .konten-artikel img {
@@ -153,17 +160,147 @@ main {
 }
 
 /* skill */
-.judul-skill {
-    margin-left: 200px;
-    font-size: 28px;
-    text-align: center;
-    padding: 40px;
+.bar-progress {
+    margin-left: 50px;
+    width: 45%;
+    float: left;
+}
+
+.bar-progress h4 {
+    font-size: 14px;
+}
+
+.bar-progress li {
+    margin: 2px 0;
+    width: 100%;
+}
+
+.bar-progress li .bar {
+    margin: 10px 0;
+    background: #353b48;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0, 0, 0.7);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar-progress li .bar span {
+    height: 3px;
+    float: left;
+    background: #2187e7;
+}
+
+.html {
+    width: 80%;
+}
+
+.css,
+.bootstrap {
+    width: 65%;
+}
+
+.jquery {
+    width: 50%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.php {
+    width: 75%;
+}
+
+.konten-skill img {
+    width: 48%;
+    margin: 20px 0 0 10px;
 }
 
 /* aside */
 .biodata {
-    width: 25%;
+    width: 29%;
     float: left;
+    font-size: 28px;
+    padding-top: 40px;
+    margin-left: 10px;
+}
+
+.biodata table {
+    font-size: 16px;
+}
+
+.biodata table img {
+    width: 100%;
+}
+
+.biodata table td {
+    padding: 10px;
+}
+
+.biodata table td.title-table {
+    width: 40%;
+    height: 40px;
+}
+
+/* footer */
+footer {
+    margin-top: 40px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background-color: #353b48;
+}
+
+footer p {
+    font-size: 14px;
+    color: #2DC2A4;
+}
+
+/* contact */
+#contact {
+    width: 70%;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#contact .col-25 {
+    text-align: left;
+    font-size: 18px;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+#contact .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2DC2A4;
+    border-radius: 4px;
+    resize: vertical;
+    display: block;
+    font-size: 14px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -351,7 +488,7 @@ main {
     }
 
     .jumbotron-text h1 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 10px;
     }
 
@@ -360,13 +497,32 @@ main {
     }
 
     .jumbotron img {
-        padding: 18px 0 0 0;
+        margin-top: 10px;
         float: none;
         width: 70%;
     }
 
     #content {
         width: 100%;
-        float: left;
+        float: none;
+    }
+
+    .judul-artikel h3,
+    .judul-skill h3,
+    .biodata h4,
+    #contact h4 {
+        margin: 10px 0 10px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .bar-progress {
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
+
+    .konten-skill img {
+        display: none;
     }
 }
