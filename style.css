@@ -3,3 +3,145 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility */
+
+header {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    line-height: 80px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* logo */
+.logo {
+    font-size: 32px;
+    font-family: Viga, sans-serif;
+    float: left;
+}
+
+.logo .red {
+    color: rgba(46, 42, 42, 1);
+}
+
+.logo .blue {
+    color: #2DC2A4;
+}
+
+
+/* bars */
+.bars {
+    width: 30px;
+    height: 25px;
+    border-bottom: 3px solid rgba(46, 42, 42, 1);
+}
+
+.bars,
+input {
+    display: none;
+}
+
+/* navbar */
+.nav-links {
+    float: right;
+}
+
+.nav-links a {
+    margin: 0 20px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(46, 42, 42, 1);
+}
+
+.nav-links li:hover::after {
+    content: "";
+    display: block;
+    width: 30%;
+    margin: auto;
+    border-bottom: 3px solid #2DC2A4;
+    padding-bottom: 5px;
+    margin-top: -32px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* header */
+    header {
+        width: 100%;
+    }
+
+    /* logo */
+    .logo {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-bottom: -20px;
+    }
+
+    /* bars */
+    .bars {
+        display: block;
+        float: right;
+        margin: 22px 40px 0 0;
+        margin-bottom: -20px;
+    }
+
+    .bars:hover {
+        cursor: pointer;
+    }
+
+    .bars::before {
+        content: "";
+        display: block;
+        margin: 8px 0 0;
+    }
+
+    .bars::after {
+        content: "";
+        display: block;
+        margin: 4px 0 0;
+    }
+
+    .bars::after,
+    .bars::before {
+        width: 30px;
+        height: 3px;
+        background-color: rgba(46, 42, 42, 1);
+    }
+
+    /* navigasi */
+    .navbar {
+        line-height: 60px;
+        display: none;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        cursor: pointer;
+        display: none;
+        display: block;
+        border-bottom: 1px solid gray;
+    }
+
+    .nav-links li:hover::after {
+        content: "";
+        display: none;
+    }
+
+    #toogle:checked+.navbar {
+        display: block;
+    }
+}
