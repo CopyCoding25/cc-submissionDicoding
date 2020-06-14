@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@font-face {
+    font-family: 'Quicksand';
+    src: url(assets/font/quicksand/regular.ttf);
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url(assets/font/sriracha/regular.ttf);
+}
 
 * {
     margin: 0;
@@ -17,6 +24,7 @@ body {
 
 /* utility */
 header {
+    transition: 0.4s;
     width: 100%;
     margin: 0 auto;
     height: 80px;
@@ -26,7 +34,6 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
 }
 
 .clearfix {
@@ -51,6 +58,7 @@ li {
 .logo {
     font-size: 32px;
     float: left;
+    transition: 0.4s;
 }
 
 .first-color {
@@ -76,11 +84,12 @@ input {
 /* navbar */
 .nav-links {
     float: right;
+    font-size: 14px;
+    transition: 0.4s;
 }
 
 .nav-links a {
     margin: 0 20px 0;
-    font-size: 14px;
     text-transform: uppercase;
     color: rgba(46, 42, 42, 1);
 }
@@ -192,8 +201,8 @@ main {
     margin: 10px 0;
     background: #353b48;
     display: block;
-    height: 15px;
-    border: 6px solid rgba(0, 0, 0.7);
+    height: 10px;
+    border: 4px solid rgba(0, 0, 0.7);
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 0 10px #2187e7b3;
@@ -546,11 +555,12 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
 
     /* header */
     header {
         width: 100%;
+        padding: 0 1%;
     }
 
     /* logo */
@@ -598,8 +608,10 @@ textarea {
     }
 
     .nav-links {
+        margin-top: 22px;
         width: 100%;
         text-align: center;
+        background-color: rgb(255, 255, 255);
     }
 
     .nav-links li {
@@ -742,6 +754,10 @@ textarea {
 }
 
 @media only screen and (max-width: 400px) {
+
+    header {
+        padding: 0 1%;
+    }
 
     /* jumbotron */
     .jumbotron {
