@@ -329,7 +329,7 @@ textarea {
     clear: both;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1600px) {
 
     /* jumbotron */
     .jumbotron {
@@ -403,12 +403,20 @@ textarea {
 
     .bar-progress {
         margin-left: 0;
-        width: 100%;
-        float: none;
+        width: 50%;
+        float: left;
     }
 
     .konten-skill img {
-        display: none;
+        display: block;
+        width: 45%;
+        float: left;
+    }
+
+    .skill::after {
+        content: "";
+        display: block;
+        clear: both;
     }
 
     .biodata {
@@ -416,6 +424,7 @@ textarea {
         float: none;
         font-size: 28px;
         padding: 40px 0 0;
+        text-align: center;
     }
 
     .biodata table {
@@ -426,27 +435,37 @@ textarea {
         padding: 5px 15px;
     }
 
+    .biodata table img {
+        width: 30%;
+    }
+
     .biodata table td.title-table {
         width: 30%;
         height: 40px;
     }
 
+    .bar-progress {
+        margin-left: 50px;
+        width: 45%;
+    }
+
     #contact {
-        width: 100%;
+        width: 80%;
         padding: 20px;
+        margin: 0 auto;
     }
 
     #contact .col-25 {
         text-align: none;
         font-size: 12px;
         float: left;
-        width: 100%;
+        width: 25%;
         margin-top: 6px;
     }
 
     #contact .col-75 {
-        float: none;
-        width: 100%;
+        float: left;
+        width: 75%;
         margin-top: 6px;
     }
 
@@ -502,13 +521,21 @@ textarea {
     }
 
     .bar-progress {
-        margin-left: 0;
-        width: 100%;
-        float: none;
+        margin-left: 20px;
+        width: 50%;
+        float: left;
     }
 
     .konten-skill img {
-        display: none;
+        display: block;
+        width: 45%;
+        float: left;
+    }
+
+    .skill::after {
+        content: "";
+        display: block;
+        clear: both;
     }
 
     .biodata {
@@ -516,10 +543,15 @@ textarea {
         float: none;
         font-size: 28px;
         padding: 40px 0 0;
+        text-align: center;
     }
 
     .biodata table {
         font-size: 14px;
+    }
+
+    .biodata table img {
+        width: 50%;
     }
 
     .biodata table td {
@@ -532,7 +564,7 @@ textarea {
     }
 
     #contact {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 
@@ -675,8 +707,7 @@ textarea {
     }
 
     .konten-artikel img {
-        width: 180px;
-        height: 150px;
+        width: 75%;
         float: none;
         margin-bottom: 10px;
         border-radius: 50%;
@@ -714,10 +745,15 @@ textarea {
         float: none;
         font-size: 28px;
         padding: 40px 0 0;
+        text-align: center;
     }
 
     .biodata table {
         font-size: 14px;
+    }
+
+    .biodata table img {
+        width: 75%;
     }
 
     .biodata table td {
@@ -818,10 +854,15 @@ textarea {
         float: none;
         font-size: 28px;
         padding: 40px 0 0;
+        text-align: center;
     }
 
     .biodata table {
         font-size: 14px;
+    }
+
+    .biodata table img {
+        width: 75%;
     }
 
     .biodata table td {
