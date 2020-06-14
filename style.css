@@ -440,7 +440,8 @@ textarea {
         float: left;
     }
 
-    .skill::after {
+    .skill::after,
+    .about::after {
         content: "";
         display: block;
         clear: both;
@@ -516,7 +517,7 @@ textarea {
     }
 
     .jumbotron-text h1 {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
 
