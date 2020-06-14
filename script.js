@@ -5,8 +5,8 @@ var mediaQuery = window.matchMedia("(max-width: 800px)")
 myFunction(mediaQuery)
 mediaQuery.addListener(myFunction)
 
-function myFunction(mediaQueryon) {
-    if (mediaQueryon.matches) { // If media query matches
+function myFunction(mediaQueryOn) {
+    if (mediaQueryOn.matches) { // If media query matches
         console.log('ok');
         document.getElementById("head").style.boxShadow = "0 2px 10px rgba(0, 0, 0, .5)";
     } else {
